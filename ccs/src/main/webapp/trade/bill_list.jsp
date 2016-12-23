@@ -1,10 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@include file="/common/common.jsp" %>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="decorator" content="navigation">
-<meta charset="GB18030">
+<meta charset="utf-8">
 <link href="style/oa.css" rel="stylesheet" type="text/css">
 <script language="javascript" src="script/public.js"></script>
 <title>用户账单</title>

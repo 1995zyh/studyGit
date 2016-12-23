@@ -1,10 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=GB18030"
-    pageEncoding="GB18030"%>
-<%@include file="/common/common.jsp" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<title><decorator:title default="»¶Ó­Ê¹ÓÃÉÐÑ§ÌÃCCSÏµÍ³" /></title>
+<meta charset="utf-8">
+<title><decorator:title default="æ¬¢è¿Žä½¿ç”¨å°šå­¦å ‚CCSç³»ç»Ÿ" /></title>
 <%
 	String context_path = request.getContextPath();
 	context_path = (context_path==null || context_path.length()==0) ? "/" : (context_path+"/");
@@ -50,14 +49,14 @@
 <![endif]-->
 </head>
 <body>
-<h1>ÉÐÑ§ÌÃCCS¹ÜÀíÏµÍ³</h1>
-<!-- ÏÔÊ¾²Ëµ¥¿ªÊ¼ -->
+<h1>å°šå­¦å ‚CCSç®¡ç†ç³»ç»Ÿ</h1>
+<!-- æ˜¾ç¤ºèœå•å¼€å§‹ -->
 <div class="menu">
 	<ul>
-<li><a class="hide" href="user.do?method=applyUserList">ÓÃ»§ÉêÇë</a>
+<li><a class="hide" href="user.do?method=applyUserList">ç”¨æˆ·ç”³è¯·</a>
 
 <!--[if lte IE 6]>
-<a href="user.do?method=applyUserList">ÓÃ»§ÉêÇë
+<a href="user.do?method=applyUserList">ç”¨æˆ·ç”³è¯·
 <table><tr><td>
 <![endif]-->
 
@@ -68,25 +67,10 @@
 
 </li>
 
-<li><a class="hide" href="user.do">ÓÃ»§¹ÜÀí</a>
+<li><a class="hide" href="user.do">ç”¨æˆ·ç®¡ç†</a>
 
 <!--[if lte IE 6]>
-<a href="user.do">ÓÃ»§¹ÜÀí
-<table><tr><td>
-<![endif]-->
-
-<!--[if lte IE 6]>
-</td></tr></table>
-</a>
-<![endif]-->
-
-</li>
-
-
-<li><a class="hide" href="trade.do?method=purchaseInput">Ïû·Ñ</a>
-
-<!--[if lte IE 6]>
-<a href="trade.do?method=purchaseInput">Ïû·Ñ
+<a href="user.do">ç”¨æˆ·ç®¡ç†
 <table><tr><td>
 <![endif]-->
 
@@ -98,10 +82,10 @@
 </li>
 
 
-<li><a class="hide" href="trade.do?method=depositInput">»¹¿î</a>
+<li><a class="hide" href="trade.do?method=purchaseInput">æ¶ˆè´¹</a>
 
 <!--[if lte IE 6]>
-<a href="trade.do?method=depositInput">»¹¿î
+<a href="trade.do?method=purchaseInput">æ¶ˆè´¹
 <table><tr><td>
 <![endif]-->
 
@@ -112,10 +96,25 @@
 
 </li>
 
-<li><a class="hide" href="logout.do">µÇ³ö</a>
+
+<li><a class="hide" href="trade.do?method=depositInput">è¿˜æ¬¾</a>
 
 <!--[if lte IE 6]>
-<a href="logout.do">µÇ³ö
+<a href="trade.do?method=depositInput">è¿˜æ¬¾
+<table><tr><td>
+<![endif]-->
+
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+
+</li>
+
+<li><a class="hide" href="logout.do">ç™»å‡º</a>
+
+<!--[if lte IE 6]>
+<a href="logout.do">ç™»å‡º
 <table><tr><td>
 <![endif]-->
 
@@ -128,11 +127,11 @@
 
 	</ul>
 </div>
-<!-- ÏÔÊ¾²Ëµ¥½áÊø -->
+<!-- æ˜¾ç¤ºèœå•ç»“æŸ -->
 
 <hr>
-<!-- ÏÔÊ¾Ö÷ÌåÄÚÈÝ¿ªÊ¼ -->
+<!-- æ˜¾ç¤ºä¸»ä½“å†…å®¹å¼€å§‹ -->
 <decorator:body/>
-<!-- ÏÔÊ¾Ö÷ÌåÄÚÈÝ½áÊø -->
+<!-- æ˜¾ç¤ºä¸»ä½“å†…å®¹ç»“æŸ -->
 </body>
 </html>

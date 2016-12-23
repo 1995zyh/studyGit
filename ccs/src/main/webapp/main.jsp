@@ -1,14 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=GB18030"
-    pageEncoding="GB18030"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
-<meta name="decorator" content="navigation">
-<title>CCS系统首页</title>
+<meta charset="utf-8">
+<title>CCS绯荤粺棣栭〉</title>
 </head>
 <body>
-CCS系统首页 <br>
+CCS绯荤粺棣栭〉 <br>
 
 </body>
 </html>

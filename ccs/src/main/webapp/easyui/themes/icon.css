@@ -94,3 +94,11 @@
 .icon-large-chart{
 	background:url('icons/large_chart.png') no-repeat center center;
 }
+
+.icon-full{
+	background:url('icons/full_screen.png') no-repeat center center;
+}
+
+.icon-unfull{
+	background:url('icons/unfull_screen.png') no-repeat center center;
+}

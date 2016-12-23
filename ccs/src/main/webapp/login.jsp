@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>登录页面</title>
+<title>Insert title here</title>
 <link type="text/css" rel="stylesheet" href="easyui/themes/icon.css">
 <link type="text/css" rel="stylesheet" href="easyui/themes/default/easyui.css">
 <link type="text/css" rel="stylesheet" href="css/login.css">
@@ -14,8 +14,8 @@
 			<p><label>${errorMsg }&nbsp;</label></p><c:remove var="errorMsg" scope="session"/>
 			<p><input name="uname" placeholder="请输入用户名" required="required"/></p>
 			<p><input type="password" name="upwd" placeholder="请输入密码"  required="required"/></p>
-			<p><img src="vcode.jpg" title="看不清，换一张"/><input style="width: 155px" name="vcode" placeholder="请输入验证码" id="vcode"  required="required"/></p>
-			<p><input type="submit" value="登录" id="loginBtn"/><a href="page/forgetPassword.jsp"> 忘记密码</a></p>
+			<p><img src="vcode.jpg" title="看不清，换一张"/><input name="vcode" placeholder="请输入验证码" id="vcode"  required="required"/></p>
+			<p><input type="submit" value="登录" id="loginBtn"/>&nbsp;&nbsp;<a href="page/forgetPassword.jsp">忘记密码</a></p>
 		</form>
 	</div>
 	<script type="text/javascript" src="easyui/jquery.min.js"></script>

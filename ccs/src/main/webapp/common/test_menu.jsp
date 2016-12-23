@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=GB18030"
-    pageEncoding="GB18030"%>
-<%@include file="/common/common.jsp" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%-- <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %> --%>
+<!DOCTYPE html>
 <html>
 <head>
-<title><decorator:title default="»¶Ó­Ê¹ÓÃÉĞÑ§ÌÃCRMÏµÍ³" /></title>
+<meta charset="utf-8">
+<title><decorator:title default="æ¬¢è¿ä½¿ç”¨æºè¾°CCSç³»ç»Ÿ" /></title>
 <style type="text/css">
 /* common styling */
 .menu {font-family: arial, sans-serif; width:750px; position:relative; margin:0; font-size:11px; margin:5px 0;}
@@ -43,20 +43,20 @@
 <![endif]-->
 </head>
 <body>
-<h1>ÉĞÑ§ÌÃCRM¹ÜÀíÏµÍ³</h1>${test}
-<!-- ÏÔÊ¾²Ëµ¥¿ªÊ¼ -->
+<h1>å°šå­¦å ‚æºè¾°CCSç³»ç»Ÿ</h1>${test}
+<!-- æ˜¾ç¤ºèœå•å¼€å§‹ -->
 <div class="menu">
 	<ul>
-<li><a class="hide" href="javascript:alert('test')">²Ëµ¥1</a>
+<li><a class="hide" href="javascript:alert('test')">èœå•1</a>
 
 <!--[if lte IE 6]>
-<a href="javascript:alert('test')">²Ëµ¥1
+<a href="javascript:alert('test')">èœå•1
 <table><tr><td>
 <![endif]-->
 
 	<ul>
-		<li><a href="javascript:alert('test')" title="×Ó²Ëµ¥1">×Ó²Ëµ¥1</a></li>
-		<li><a href="javascript:alert('test')" title="×Ó²Ëµ¥2">×Ó²Ëµ¥2</a></li>
+		<li><a href="javascript:alert('test')" title="å­èœå•1">å­èœå•1</a></li>
+		<li><a href="javascript:alert('test')" title="å­èœå•2">å­èœå•2</a></li>
 	</ul>
 
 <!--[if lte IE 6]>
@@ -66,16 +66,16 @@
 
 </li>
 
-<li><a class="hide" href="javascript:alert('test')">²Ëµ¥2</a>
+<li><a class="hide" href="javascript:alert('test')">èœå•2</a>
 
 <!--[if lte IE 6]>
-<a href="javascript:alert('test')">²Ëµ¥2
+<a href="javascript:alert('test')">èœå•2
 <table><tr><td>
 <![endif]-->
 
 	<ul>
-		<li><a href="javascript:alert('test')" title="×Ó²Ëµ¥1">×Ó²Ëµ¥1</a></li>
-		<li><a href="javascript:alert('test')" title="×Ó²Ëµ¥2">×Ó²Ëµ¥2</a></li>
+		<li><a href="javascript:alert('test')" title="å­èœå•1">å­èœå•1</a></li>
+		<li><a href="javascript:alert('test')" title="å­èœå•2">å­èœå•2</a></li>
 	</ul>
 
 <!--[if lte IE 6]>
@@ -87,11 +87,11 @@
 
 	</ul>
 </div>
-<!-- ÏÔÊ¾²Ëµ¥½áÊø -->
+<!-- æ˜¾ç¤ºèœå•ç»“æŸ -->
 
 <hr>
-<!-- ÏÔÊ¾Ö÷ÌåÄÚÈİ¿ªÊ¼ -->
+<!-- æ˜¾ç¤ºä¸»ä½“å†…å®¹å¼€å§‹ -->
 <decorator:body/>
-<!-- ÏÔÊ¾Ö÷ÌåÄÚÈİ½áÊø -->
+<!-- æ˜¾ç¤ºä¸»ä½“å†…å®¹ç»“æŸ -->
 </body>
 </html>
