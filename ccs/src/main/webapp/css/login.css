@@ -21,7 +21,7 @@
 }
 
 #loginForm input#loginBtn {
-	color: gray;
+	/* color: gray;
 	width: 80%;
 	height: 200%;
 	clear: both;
@@ -29,6 +29,7 @@
 	font-size:150%;
 	letter-spacing: 10px;
 	padding-left:20px;
+	background-color: red; */
 }
 
 #loginForm p label{

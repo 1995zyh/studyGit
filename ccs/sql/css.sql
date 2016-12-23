@@ -28,7 +28,7 @@ create table t_applyUser
 	adminId Integer, --审批人(管理员)
 	remark varchar2(200)
 );
-
+alter table t_applyUser add email varchar2(100) not null;
 --账单表
 create table t_bill
 (
@@ -37,6 +37,7 @@ create table t_bill
 	amount Float, --账单总额
 	payoff Integer  --是否付清
 );
+alter table t_bill add email varchar2(100) not null;
 
 --信用卡表
 create table t_card
