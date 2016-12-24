@@ -35,18 +35,16 @@
 	    <property name="dataSource" ref="dataSource"/>
 	</bean>
 	
-	<!-- 邮件发送配置 -->
+	<!-- 邮件发送配制 -->
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-	    <property name="host" value="${main.smtp.host}"/>
-	    <property name="password" value="${main.smtp.password}"/>
-	    <property name="username" value="${main.smtp.username}"/>
-	    <property name="javaMailProperties">
-	    	<props>
-	    		<prop key="main.smtp.auth">${main.smtp.auth}</prop>
-	    		<prop key="main.smtp.timeout">${main.smtp.timeout}</prop>
-	    	</props>
-	    </property>
+    	<property name="host" value="${mail.smtp.host}"/>
+    	<property name="username" value="${mail.smtp.username}"/>
+    	<property name="password" value="${mail.smtp.password}"/>
+    	<property name="javaMailProperties">
+    	    <props>
+    	        <prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+    	         <prop key="mail.smtp.timeout">${mail.smtp.timeout}</prop>
+    	    </props>
+    	</property>
 	</bean>
-	
-	
 </beans>

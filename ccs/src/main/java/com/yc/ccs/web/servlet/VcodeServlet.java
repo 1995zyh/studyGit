@@ -21,11 +21,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/vcode.jpg")
 public class VcodeServlet extends HttpServlet {
 	private static final long serialVersionUID = 4348904329267330103L;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 设置页面不缓存
 		response.setHeader("Pragma", "No-cache");
 		response.setHeader("Cache-Control", "no-cache");
 		response.setDateHeader("Expires", 0);
+
 		// 在内存中创建图象
 		int width = 60, height = 20;
 		BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -66,9 +68,10 @@ public class VcodeServlet extends HttpServlet {
 			g.setColor(new Color(20 + random.nextInt(110), 20 + random.nextInt(110), 20 + random.nextInt(110)));// 调用函数出来的颜色相同，可能是因为种子太接近，所以只能直接生成
 			g.drawString(rand, 13 * i + 6, 16);
 		}
+		System.out.println("随机的验证码是" + sRand);
 
 		// 将******存入SESSION
-		request.getSession().setAttribute("rand", sRand);
+		request.getSession().setAttribute("rand", sRand);  
 
 		// 图象生效
 		g.dispose();

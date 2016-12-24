@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +10,9 @@
 </head>
 <body>
 	<form action="user/forget" id="forgetForm" method="post">
-		<p><input name="username" required="required" placeholder="请输入用户名"/></p>
-		<p><input type="email" name="email" required="required" placeholder="请输入找回密码邮箱"/></p>
+		<p><input name="username" required="required" placeholder="请求输入用户名"/></p>
+		<p><input type="email" name="email" required="required" placeholder="请求输入找出密码邮箱"/></p>
 		<p><button>找回密码</button></p>
 	</form>
-</body>
+</body>s
 </html>
