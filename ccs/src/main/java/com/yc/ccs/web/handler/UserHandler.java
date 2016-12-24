@@ -25,8 +25,9 @@ public class UserHandler {
 		
 		try {
 			MimeMessage message=mailSender.createMimeMessage();
-			MimeMessageHelper helper=new MimeMessageHelper(message,true);
-			helper.setFrom("zhangyanghui1995@163.com");
+			MimeMessageHelper helper=new MimeMessageHelper(message,true,"utf-8");
+//			helper.setFrom("woshizhangyanghui@qq.com");
+			helper.setFrom("studymail_test@163.com");
 			helper.setTo(email);
 			helper.setSubject("找回密码");
 			String hrefStr=session.getServletContext().getContext("/user/getpassword")+"?username="+username;
