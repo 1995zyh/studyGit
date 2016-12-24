@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<!DOCTYPE html>
+<jsp:forward page="login.jsp" />
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -12,4 +13,4 @@
 	<input type="submit" name="submit2" value="登录CCS系统">
 </form>
 </body>
-</html>
+</html> -->

@@ -16,7 +16,7 @@ create table t_admin
 	securityCode varchar2(10), --安全代码，即管理员等级
 	partyName varchar2(20) --所属部门的名称
 );
-
+alter table t_admin  add email varchar2(100) not null;
 --申请用户的表单
 create table t_applyUser
 (
