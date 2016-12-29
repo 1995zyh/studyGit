@@ -12,13 +12,16 @@ create table t_admin
 (
 	id Integer primary key,
 	username varchar2(20),
-	password varchar2(20),
+	password varchar2(40),
 	securityCode varchar2(10), --安全代码，即管理员等级
 	partyName varchar2(20) --所属部门的名称
 );
-
+alter table t_admin modify password varchar2(40)
 alter table t_admin add email varchar2(100) not null;
+insert into T_ADMIN values(1001,'admin','a','1','营销','woshizhangyanghui@qq.com')   255337
+select * from T_ADMIN;
 
+update t_admin set password='b' where username='admin';
 --申请用户的表单
 create table t_applyUser
 (
