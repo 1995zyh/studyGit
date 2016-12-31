@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 明明看空間与对应映射借口的全类名一直 -->
+<mapper namespace="com.yc.ccs.mapper.UserMapper">
+	<update id="updataUser" parameterType="User">
+		update t_admin set password=#{password} where username=#{username}
+	</update>
+	
+	<select id="getUser" parameterType="User" resultType="User">
+		select * from t_admin where username=#{username} and password=#{password}
+	</select>
+</mapper>
